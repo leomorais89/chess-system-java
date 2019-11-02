@@ -1,6 +1,6 @@
 package boardgame;
 
-public abstract class Peace {
+public class Peace {
 
 	protected Position position;
 	

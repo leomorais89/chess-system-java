@@ -33,4 +33,12 @@ public class Board {
 	public void setColumns(Integer columns) {
 		this.columns = columns;
 	}
+	
+	public Peace peace(int row, int column) {
+		return peaces[row][column];
+	}
+	
+	public Peace peace(Position position) {
+		return peaces[position.getRow()][position.getColumn()];
+	}
 }
