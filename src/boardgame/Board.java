@@ -41,4 +41,9 @@ public class Board {
 	public Peace peace(Position position) {
 		return peaces[position.getRow()][position.getColumn()];
 	}
+	
+	public void placePeace(Peace peace, Position position) {
+		peaces[position.getRow()][position.getColumn()] = peace;
+		peace.position = position;
+	}
 }
